@@ -1,0 +1,146 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.add-account-button {
+    font-size: 15px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 575px){
+
+    .account-row{
+        margin-top: 16px;
+    }
+
+    .close-icon{
+        position: relative;
+        bottom: 16px;
+    }
+
+    .add-account-div {
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        margin-right: 12px;
+    }
+
+    .add-account-div > .btn-add{
+        padding: 1px 5px;
+        font-size: 12px;
+        line-height: 1.5;
+        border-radius: 3px;
+        float: right;
+    }
+
+    .send-withdraw{
+        padding: 3px 7px;
+        font-size: 15px;
+        line-height: 1.5;
+        border-radius: 3px;
+        float: right;
+    }
+
+    #withdraw-collapse {
+        margin-bottom: 0px;
+    }
+
+    .btn-add{
+        position: relative;
+        left: 33px;
+    }
+
+    .btn-upper{
+        position: absolute;
+        bottom: -19px;
+        font-size: 10px;
+        left: -2px;
+    }
+}
+
+@media screen and (min-width: 575px){
+
+    .account-row{
+        padding-top: 16px;
+    }
+
+    #withdraw-collapse {
+        margin-bottom: 20px;
+    }
+
+    .add-account-div {
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        margin-right: 12px;
+    }
+
+    .add-account-div > .btn-add{
+        padding: 1px 5px;
+        font-size: 12px;
+        line-height: 1.5;
+        border-radius: 3px;
+        float: right;
+        position: relative;
+        left: 33px;
+    }
+
+    .btn-upper{
+        position: absolute;
+        bottom: -19px;
+        left: 110px;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .btn-upper{
+        position: absolute;
+        bottom: -19px;
+        left: -2px;
+        font-size: 10px;
+    }
+    .btn-upper {
+        text-indent: -9999px;
+        line-height: 0; /* Collapse the original line */
+    }
+    
+    .btn-upper::after {
+        content: "Clique para Antecipar";
+        text-indent: 0; 
+        display: block;
+        line-height: initial; /* New content takes up original line height */
+    }
+}
+
+@media screen and (min-width: 992px){
+
+}
+
+@media screen and (min-width: 1250px){
+
+    .btn-upper {
+        font-size: 12px;
+    }
+}
+
+/*
+#withdraw-collapse {
+    margin-bottom: 20px;
+}
+*/
+
+#check_account {
+    margin-left: 5px;
+}
+
+#withdraw-table-id thead th {
+    position: sticky;
+    top: 0;
+    background:#f2f2f2;
+    /* box-shadow: inset 0px 0.4px black; */
+    top: -1px;
+    z-index: 2;
+}
