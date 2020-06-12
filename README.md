@@ -14,7 +14,7 @@ $ php artisan migrate
 ```
 $ php artisan migrate
 ```
-
+Renomear o arquivo .env.example para .env
 ```
 $ php artisan serve
 ```
